@@ -82,3 +82,11 @@ void setup() {
         Serial.println("OLED not found");
         while (1);   ///< Halt system if OLED is not detected
     }
+  display.clearDisplay();
+    display.setTextSize(1);
+    display.setTextColor(WHITE);
+    display.setCursor(0, 0);
+    display.println("DHT11 Sensor");
+    display.display();
+    delay(2000);
+}
