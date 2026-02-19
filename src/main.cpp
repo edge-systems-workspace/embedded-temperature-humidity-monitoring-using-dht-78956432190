@@ -74,3 +74,11 @@ DHT dht(DHTPIN, DHTTYPE);
  * - Displays startup splash message.
  * - Halts execution if OLED initialization fails.
  */
+void setup() {
+    Serial.begin(9600);
+    dht.begin();
+
+    if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+        Serial.println("OLED not found");
+        while (1);   ///< Halt system if OLED is not detected
+    }
