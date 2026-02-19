@@ -2,7 +2,7 @@
  * @file main.cpp
  * @version 1.0
  * @date 19 Feb 2026
- * @author Khushi Singh
+ * @author Khushi Singh 
  *
  * @brief Temperature and Humidity Monitoring System using DHT11 and SSD1306 OLED.
  *
